@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: bisque;
+
+        position: absolute;
+
+        /* top: 50px;
+        left: 500px; */
+      }
+
+      .image_temperature {
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <input
+      type="text"
+      placeholder="Bạn muốn dịch chuyển khối box sang bên phải bao xa ?"
+      id="input1"
+    />
+
+    <input type="text" id="input2" />
+    <button>Di chuyển</button>
+    <div class="box"></div> -->
+
+    <input placeholder="Nhập địa điểm" type="text" id="search_weather" />
+    <button>Search</button>
+
+    <p>
+      <b>Thời tiêt ở <span id="address"></span>: </b
+      ><span id="temperature"></span>
+    </p>
+
+    <div class="image_temperature">
+      <img src="./rain.png" alt="" />
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
