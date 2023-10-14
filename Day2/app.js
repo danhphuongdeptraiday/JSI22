@@ -38,7 +38,10 @@ search_button.addEventListener("click", function () {
         .then(function (data_weather) {
           console.log(data_weather);
           let weather_code = data_weather.current_weather.weathercode;
-          console.log(weather_code);
+          let time = data_weather.current_weather.time;
+          let data_date = time.split("T");
+          console.log(data_date);
+          // console.log(weather_code);
           if (weather_code >= 0 && weather_code <= 3) {
             img.src = "./sun.png";
           } else if (weather_code >= 45 && weather_code < 77) {
@@ -52,3 +55,7 @@ search_button.addEventListener("click", function () {
         });
     });
 });
+
+let t = "Phuong Doanh";
+let v = t.substring(t.length - 5, t.length);
+console.log(v);
