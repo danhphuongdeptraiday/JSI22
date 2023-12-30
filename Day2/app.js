@@ -59,3 +59,4 @@ search_button.addEventListener("click", function () {
 let t = "Phuong Doanh";
 let v = t.substring(t.length - 5, t.length);
 console.log(v);
+let s = "07:30";

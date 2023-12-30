@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container_clock1 {
+        width: 150px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_clock1">
+      <div class="time">
+        <span id="minute">00</span>
+        <span>:</span>
+        <span id="second">00</span>
+      </div>
+
+      <div class="btn_container">
+        <button id="start">Start</button>
+
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+
+    <script>
+      setInterval(function () {
+        console.log("hello");
+      }, 1000);
+    </script>
+  </body>
+</html>
